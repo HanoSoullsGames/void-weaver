@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.log
+.userdata/
+.portable-userdata/
+.DS_Store
+Thumbs.db

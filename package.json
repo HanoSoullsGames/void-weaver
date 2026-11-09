@@ -1,0 +1,50 @@
+{
+  "name": "void-weaver",
+  "version": "1.4.2",
+  "description": "Void Weaver - Cosmic 2D Action",
+  "author": "Void Weaver",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --x64"
+  },
+  "devDependencies": {
+    "electron": "45.2.3",
+    "electron-builder": "26.18.0"
+  },
+  "build": {
+    "appId": "com.voidweaver.game",
+    "productName": "Void Weaver",
+    "copyright": "Void Weaver",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "icon.png"
+    ],
+    "asar": true,
+    "compression": "maximum",
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "Void-Weaver-${version}-portable.${ext}"
+    },
+    "portable": {
+      "artifactName": "Void-Weaver-${version}-portable.${ext}",
+      "requestExecutionLevel": "user"
+    }
+  }
+}
