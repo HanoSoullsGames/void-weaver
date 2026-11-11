@@ -57,6 +57,7 @@ npm run dist
 
 ## Скачать
 
+- itch.io: https://hanosoulls.itch.io/void-weaver (браузер и Windows)
 - Windows: раздел **Releases** этого репозитория;
 - браузер: https://hano-games.netlify.app/games/void-weaver/
 
